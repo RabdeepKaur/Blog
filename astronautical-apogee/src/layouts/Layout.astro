@@ -1,0 +1,50 @@
+---
+import Header from "../components/Header.astro";
+import Wanted from "../components/Wanted.astro";
+
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>THE BLOG </title>
+	</head>
+	<body>
+		<Header/>
+		<Wanted/>
+	</body>
+</html>
+
+<style>
+	@import "tailwindcss";
+
+	 @font-face {
+        font-family: 'Oldnewspapertypes';
+        src: url('/assets/old-newspaper-types-font/Oldnewspapertypes-449D.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+    /* Test class to verify font is working */
+    .font{
+        font-family: 'Oldnewspapertypes', serif;
+    }
+	html,
+	body {
+		margin: 0;
+		padding:0;
+		 background-image: url('/bg.jpg');
+		 background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 200px; /* Add some height to see the background */
+	}
+	
+	
+	
+</style>

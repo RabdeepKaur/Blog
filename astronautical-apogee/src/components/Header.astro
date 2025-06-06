@@ -1,0 +1,20 @@
+---
+
+
+function getDate() {
+    return new Date().toString().split(' ').slice(1, 4).join(' ');
+}
+---
+
+<div class="flex flex-col items-center justify-center border-b-2 border-black bg-bg w-full">
+    <section class="flex text-4xl text-center border-t-2 border-black w-full justify-center">
+        <h1>THE BLOG</h1>
+    </section>
+    <section class="flex gap-100 text-xl text-center border-t-2 border-black w-full justify-center">
+        <span>Projects</span>
+        <span>All Blog</span>
+        <span>{getDate()}</span>
+    </section>
+</div>
+
+
